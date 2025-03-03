@@ -1,3 +1,4 @@
 class Micropost < ApplicationRecord
-  vallidates :content, length:{maximum: 140}
+  belongs_to :user
+  vallidates :content, length: { maximum: 140 }
 end
